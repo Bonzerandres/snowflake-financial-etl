@@ -1,1 +1,4 @@
-
+pipelines:
+  - name: fred_pipeline
+    description: "Pipeline to ingest FRED financial data into Snowflake"
+    run: "python src/ingestion/fred_ingest.py"
